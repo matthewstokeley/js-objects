@@ -1,8 +1,8 @@
 ## js-objects
 
-0.0.3
+0.0.4
 
-methods for working with data structures and functions.  ht `_`; - *mostly* immutable and stateless.
+Methods for working with data structures and functions.  ht `_`; - *mostly* immutable and stateless.
 
 ### API Documentation
 
@@ -455,7 +455,6 @@ console.log(__.verifyPropertiesExist(obj, objectKeys));
 Walk an object and run a function at each attribute without mapping
 
 ```
-
 var obj = {
 	a: "a",
 	b: "b",
@@ -470,8 +469,6 @@ __.walkObject(obj, fn);
 // a
 // b
 // c
-
-
 
 ```
 
