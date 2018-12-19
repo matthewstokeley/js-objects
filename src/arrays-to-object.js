@@ -7,16 +7,16 @@
 
 		if (!array ||
 			!Array.isArray(array)) {
-			console.log('map values requires an array');
+			throw new Error('map values requires an array');
 		}
 
 		if (!properties ||
 			!Array.isArray(properties)) {
-			console.log('properties must be an array');
+			throw new Error('properties must be an array');
 		}
 
 		if (properties.length !== array.length) {
-			console.log('properties and array don\'t match');
+			throw new Error('properties and array don\'t match');
 		}
 
 		var obj = {};

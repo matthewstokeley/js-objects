@@ -33,17 +33,17 @@
 		if (!options.scope) {
 			options.scope = this;
 		}
-
-		/**
-		 * execute function
-		 * @param  {Function} fn  [description]
-		 * @param  {[type]}   arg [description]
-		 * @return {[type]}       [description]
-		 */
-		function runMethod(fn, arg) {
-			arg = [arg];
-			return fn.apply(this, arg);
-		}
+// // 
+// 		*
+// 		 * execute function
+// 		 * @param  {Function} fn  [description]
+// 		 * @param  {[type]}   arg [description]
+// 		 * @return {[type]}       [description]
+		 
+// 		function runMethod(fn, arg) {
+// 			arg = [arg];
+// 			return fn.apply(this, arg);
+// 		}
 
 		/**
 		 * execute all functions with the result of the previous function

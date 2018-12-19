@@ -22,7 +22,7 @@
 		function assignMethods(value) {
 		
 			if (value.name === '') {
-				console.log('anonymous functions have no names');
+				throw new Error('anonymous functions have no names');
 				return false;
 			}
 

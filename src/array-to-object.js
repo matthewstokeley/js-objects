@@ -7,7 +7,7 @@
 
 		if (!array ||
 			!Array.isArray(array)) {
-			console.log('map values requires an array');
+			throw new Error('map values requires an array');
 		}
 
 		var obj = {};
