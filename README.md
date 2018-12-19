@@ -88,7 +88,7 @@ __.chainMethods({
 `cloneObject`
 
 
-Clones an object, possibly without deep or nested references to the original object @todo
+Clones an object
 
 
 ```
@@ -118,7 +118,7 @@ __.doKeysMatch([{key: 'a'}, {key: 'b'}]);
 
 `extendAllMethodsInObject`
 
-Extend all methods in a class.  These `extend` functions use an `express`-style middleware pattern to add functionality to existing methods.   Essentially, an objects functions are called, followed by whichever middleware that has been provided.  
+Extend all methods in a class.  These `extend` functions use an `express`-style middleware pattern to add functionality to existing methods.   Essentially, an objects functions are called, followed by whichever middleware has been provided.  
 
 
 ```
