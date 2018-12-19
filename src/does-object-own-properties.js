@@ -7,7 +7,7 @@
 	 * @return {[type]}         [description]
 	 */
 
-	var validateAllProperties = function(options) {
+	var doesObjectOwnProperties = function(options) {
 		for (var property in options) {
 			if (options.hasOwnProperty(property)) {
 				if (options[property] === undefined) {
