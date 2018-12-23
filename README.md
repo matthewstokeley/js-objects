@@ -73,7 +73,7 @@ Chain Methods.  This function allows chaining of disparate methods that don't ne
 
 // `thisMethod` needs `thatMethod`
 
-var thisMethod = (arg1, arg2, thatMethodResponse) =?  arg1 + arg2 + thatMethodResponse;
+var thisMethod = (arg1, arg2, thatMethodResponse) =>  arg1 + arg2 + thatMethodResponse;
 
 var thatMethod = (arg1, arg2) => arg1 + arg2;
 
