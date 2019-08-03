@@ -116,9 +116,12 @@ __.doKeysMatch([{key: 'a'}, {key: 'b'}]);
 
 ---
 
+The following 'extend' methods are left here for curiosity's sake only - misnamed, half-expressed ideas from functional programming. 
+---
+
 `extendAllMethodsInObject`
 
-Extend all methods in a class.  These `extend` functions use an `express`-style middleware pattern to add functionality to existing methods.   Essentially, an objects functions are called, followed by whichever middleware has been provided.  
+Extend all methods in a class.  These `extend` functions use an `express`-style middleware pattern to add functionality to existing methods.   Essentially, an objects functions are called, followed by whichever middleware has been provided.  **These methods are  misnamed** - closer to decorators than to inheritance. 
 
 
 ```
@@ -141,7 +144,7 @@ obj.fn1()
 
 `extendAllMethods`
 
-Extend all methods.  This function works similarly to `extendAllMethodsInObject`, except that it extends methods in a prototypal class.   This status of this function is currently pending.
+Extend all methods.  This function works similarly to `extendAllMethodsInObject`, except that it extends methods in a prototypal class.   The status of this function is currently pending.
 
 
 ```
