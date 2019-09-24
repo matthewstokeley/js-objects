@@ -15,7 +15,6 @@ Array to Object
 ```
 __.arrayToObject(['a', 'b', 'c']);
 
-// returns
 // {
 //    0: 'a',
 //    1: 'b',
@@ -35,7 +34,6 @@ Arrays to Object
 
 __.arraysToObject(['a', 'b', 'c'], [1, 2, 3]);
 
-// returns
 // {
 //   1: 'a',
 //   2: 'b',
@@ -53,8 +51,6 @@ Assign methods to object
 ```
 __.assignMethodsToObject([method1, method2], {});
 
-
-// returns
 // {
 //    method1: fn,
 //    method2: fn
@@ -95,7 +91,7 @@ Clones an object
 
 __.cloneObject({});
 
-// returns `{}`;
+// `{}`;
 
 ```
 
@@ -110,7 +106,7 @@ Accepts an array of two objects;
 
 __.doKeysMatch([{key: 'a'}, {key: 'b'}]);
 
-// returns true
+// true
 
 ```
 
@@ -231,7 +227,8 @@ function example() {
 
 var array = example('a', 'b');
 console.log(array);
-// returns ['a', 'b']
+
+// ['a', 'b']
 
 ```
 
@@ -253,7 +250,7 @@ __.mapMethods({
 
 `mapObject`
 
-Map Object - similar to `Array`'s prototypal `map` functionality, `mapObject` accepts an object and a function, and loops thrugh the properties of the object, using them as parameters in the provided function.
+Map Object - similar to `Array`'s prototypal `map` functionality, `mapObject` accepts an object and a function, and loops through the properties of the object, using them as parameters in the provided function.
 
 ```
 var mappedData = __.mapObject({
@@ -264,7 +261,7 @@ var mappedData = __.mapObject({
 	}, (value, key, object) => key + ": " + typeof $el);
 
 console.log(mappedData);
-// returns ["data: object", "$el: object"]
+// ["data: object", "$el: object"]
 
 
 ```
@@ -279,7 +276,7 @@ Return an object instead of an array.
 var obj = __.mapToObject(['a', 'b', 'c'], (value, index) => value + " " + index)
 
 console.log(obj);
-// returns
+
 // {
 //     a0: "a0",
 //	   b1: "b1",
@@ -297,7 +294,7 @@ Map values.  Possibly misnamed.
 
 var obj = __.mapValues(['a', 'b', 'c'], [1, 2, 3]);
 console.log(obj);
-// returns
+
 // {
 //   1: "a",
 //   2: "b",
@@ -378,7 +375,6 @@ __.updateObjectProperties(originalObject, updateObject);
 
 console.log(originalObject);
 
-// return
 // {
 //   data: 'alt',
 //   $el: elementNode
@@ -447,7 +443,7 @@ var obj = {
 }
 
 console.log(__.verifyPropertiesExist(obj, objectKeys));
-// returns true
+// true
 
 
 ```
@@ -468,7 +464,6 @@ var fn = (value) => console.log (value)
 
 __.walkObject(obj, fn);
 
-// returns
 // a
 // b
 // c
